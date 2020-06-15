@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>SWAPI</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="main__title">STAR WARS</h1>
+        <section class="main__request request">
+            <form class="request__form form">
+                <select name="heroes" id="heroes" class="form__heroes heroes">
+                    <option value="1" class="heroes__item item">Luke Skywalker</option>
+                    <option value="2" class="heroes__item item">C-3PO</option>
+                    <option value="3" class="heroes__item item">R2-D2</option>
+                    <option value="4" class="heroes__item item">Darth Vader</option>
+                    <option value="5" class="heroes__item item">Leia Organa</option>
+                    <option value="10" class="heroes__item item">Obi-Wan Kenobi</option>
+                    <option value="11" class="heroes__item item">Anakin Skywalker</option>
+                    <option value="13" class="heroes__item item">Chewbacca</option>
+                    <option value="14" class="heroes__item item">Han Solo</option>
+                    <option value="20" class="heroes__item item">Yoda</option>
+                </select>
+                <button id="modalOpen" class="form__btn" >SHOW INFO</button id="modalOpen">
+            </form>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered " role="document">
+                <div class="modal-content modal-info">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><span id="name" class="hero__value"></span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="hero__info"><span class="hero__key">Height : </span><span id="height" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Mass : </span><span id="mass" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Hair color : </span><span id="hairColor" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Skin color : </span><span id="skinColor" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Eye color : </span><span id="eyeColor" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Birth year : </span><span id="birthYear" class="hero__value"></span></p>
+                        <p class="hero__info"><span class="hero__key">Gender : </span><span id="gender" class="hero__value"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
