@@ -1,5 +1,3 @@
-import { getTasksFromLS } from './lS.js';
-getTasksFromLS();
 function getQuantity() {
     let quantity = document.querySelector('.quantity');
     let listGroup = document.getElementById('currentTasks');
@@ -97,7 +95,7 @@ function removeEdit() {
         btnEdit[i].remove();
     };
     
-    let btnComplete = document.querySelectorAll('.btn-success');
+    let btnComplete = completedTasks.querySelectorAll('.btn-success');
     for(let i = 0; i < btnComplete.length; i++) {
         btnComplete[i].remove();
     };

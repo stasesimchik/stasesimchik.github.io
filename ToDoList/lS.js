@@ -1,4 +1,4 @@
-export function getTasksFromLS() {
+function getTasksFromLS() {
     const DATA = JSON.parse(localStorage.getItem('list'));
     for( let key in DATA){
     let info = (DATA[key]);
@@ -12,3 +12,5 @@ export function getTasksFromLS() {
     taskAdd(text, title, radio, color, dateValue,taskId, complete);
     };
 }
+
+getTasksFromLS();
