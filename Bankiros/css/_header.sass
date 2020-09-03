@@ -1,0 +1,84 @@
+.header
+  z-index: 99
+  width: 100%
+  top: 0
+  position: fixed
+  &-top
+   background-color: $header
+   max-height: 58px
+   &__content
+     display: flex
+     align-items: center
+     justify-content: space-between
+     padding: 9px 0px
+  &-bottom
+   max-height: 60px
+   border: 1px solid #DADEE2
+   background-color: $white
+.currency
+  margin: 0px 14px
+  &__index
+    text-transform: uppercase
+    &_blue
+      color: $blue
+      font-size: 14px
+    &_gray
+      color: $light
+      font-size: 12px
+  &__price
+    display: block
+    font-size: 14px
+    color: $dark
+.top-header
+  &__btn
+    background: none
+    border: none
+    &:focus
+      outline: none
+  &__burger
+    display: none
+  &__rate
+   display: flex
+  &__crypto
+   display: flex
+  &__search
+   height: 20px
+.crypto
+  &__item
+   margin: 0px 14px
+  &__name
+    font-size: 14px
+    color: $blue
+  &__price
+    display: block
+.country
+  display: flex
+  align-items: center
+  &__name
+   margin-left: 10px
+   font-size: 14px
+   display: block
+   text-decoration: underline dotted
+.nav
+  padding: 15px 0px
+  &__list
+    display: flex
+    align-items: center
+  &__item
+    display: block
+    margin-right: 20px
+  &__link
+    text-decoration: none
+    font-size: 16px
+    text-transform: uppercase
+    color: $dark
+    &::after
+      content: '\203A'
+      display: inline-block
+      transform: rotate(90deg)
+      margin-left: 10px
+      color: $light
+    &:hover
+      color: $blue
+    &:hover::after
+      color: $blue

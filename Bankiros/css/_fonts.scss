@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.eot');
+  src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('../fonts/Lato-Black.eot');
+  src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Lato-Black.woff') format('woff'),
+  url('../fonts/Lato-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin light{
+  font-family: 'Lato',sans-serif;
+}
+
+@mixin bold{
+  font-family: 'Lato Bold',sans-serif;
+}

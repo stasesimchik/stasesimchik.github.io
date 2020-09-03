@@ -1,0 +1,33 @@
+.section-blocks
+ padding-top: 20px
+ padding-bottom: 60px
+ border-bottom: 1px solid #E8ECEF
+ &__content
+   display: flex
+   flex-wrap: wrap
+ &__item
+   padding: 6px 8px
+   border: 1px solid #DADEE2
+   border-radius: 100px
+   background-color: #F8FBFF
+   margin-right: 5px
+   margin-bottom: 5px
+   &:hover
+     background-color: $green
+   &:hover .section-blocks__link
+     color: $white
+ &__link
+   text-decoration: none
+   color: #9299A2
+   font-size: 14px
+ &__btn
+  border: none
+  text-decoration: underline dotted
+  font-size: 14px
+  color: #9299A2
+  background: none
+  &:hover
+    cursor: pointer
+    color: $green
+  &:focus
+    outline: none
