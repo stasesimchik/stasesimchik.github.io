@@ -1,0 +1,110 @@
+.header-bg
+  background-image: url(../img/header-bg.png)
+  background-size: cover
+  background-repeat: no-repeat
+  max-width: 1920px
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  max-height: 1080px
+  &__image
+   position: absolute
+   z-index: -1
+  &__content
+   display: flex
+   align-items: center
+   flex-direction: column
+  &__title
+    text-transform: uppercase
+    font-size: 70px
+    font-family: 'Raleway', sans-serif
+    color: #fff
+    margin-top: 420px
+    span
+     color: $active
+  &__text
+    color: #fcfcfc
+    text-align: center
+  &__line
+    width: 100px
+    height: 2px
+    background: $active
+.main-button
+  padding: 15px 25px
+  background: #fff
+  border: none
+  color: black
+  margin-top: 20px
+  margin-bottom: 320px
+  &:hover
+    background: $active
+    color: #fff
+  &__text
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: 700
+    font-family: 'Raleway', sans-serif
+.top-nav
+  background-color: #272727
+  padding: 15px 0
+  &__contacts
+    display: flex
+    a
+     text-decoration: none
+     color: #fff
+     margin-right: 10px
+     display: flex
+     align-items: center
+     &:hover
+       color: #138fa1
+     img
+       margin-right: 10px
+  &__content
+   display: flex
+   justify-content: space-between
+  &__social
+    a
+      margin-right: 10px
+.bottom-nav
+  background-color: #121212
+  &__logo
+    padding: 37px 0
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+.menu
+  &-list
+    display: flex
+    list-style: none
+    &__link
+      text-decoration: none
+      color: #fff
+      margin-right: 30px
+      text-transform: uppercase
+      &:hover
+       color: #138fa1
+  &-burger
+    display: none
+    &__button
+      background-color: transparent
+      border: none
+      width: 40px
+      height: 40px
+      &:focus
+        outline: none
+    &__line
+      display: block
+      width: 20px
+      height: 2px
+      background-color: #fff
+      &::after,&::before
+        content: ''
+        display: block
+        width: 20px
+        height: 2px
+        background-color: #fff
+        transform: translateY(10px)
+      &::before
+        transform: translateY(-10px)
