@@ -1,0 +1,76 @@
+.price
+  &__blocks a
+    text-decoration: none
+  &__block
+    flex-basis: 24%
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08)
+    margin-top: 70px
+    & span
+      font-size: 18px
+      color: #000000
+      text-align: center
+      display: block
+      padding: 34px 0
+  &__image
+    width: 100%
+  &-wrap__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-wrap__useful
+    font-size: 22px
+    +bold
+  &-wrap__link
+    font-size: 14px
+    color: #507fe1
+    +bold
+  &-wrap__info
+    margin-bottom: 100px
+.gallery
+  &__blocks
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__block
+    flex-basis: 24%
+    & img
+      width: 100%
+  &__button
+    font-size: 14px
+    padding: 20px
+    margin-top: 20px
+    position: absolute
+    top: 0
+    left: 0
+    transform: scaleX(0)
+    transition: 1.5s
+.gallery__block:hover .gallery__button
+ display: inline-block
+ transform: scaleX(1)
+ position: relative
+.block__text
+  display: block
+  font-size: 15px
+  padding: 23px 0
+  text-align: center
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08)
+  margin-bottom: 10px
+@media (max-width:991px)
+  .gallery__block
+   flex-basis: 34%
+  .gallery__blocks
+   justify-content: space-around
+  .price
+    &__block
+      flex-basis: 34%
+    &-wrap__row
+      flex-wrap: wrap
+      justify-content: space-around
+@media (max-width:576px)
+  .price-wrap
+    &__row
+     flex-direction: column
+    &__useful
+     font-size: 18px
+  .gallery__block
+    flex-basis: 51%

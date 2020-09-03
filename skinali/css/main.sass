@@ -1,0 +1,44 @@
+@import 'fonts'
+@import 'grid'
+@import 'navbar'
+@import 'hero'
+@import 'menu'
+@import 'request'
+@import 'advantage'
+@import 'catalog'
+@import 'price'
+@import 'work'
+@import 'reviews'
+@import 'about'
+@import 'contacts'
+@import 'footer'
+@import 'before'
+@import 'slick'
+
+body
+  box-sizing: border-box
+  +light
+  max-width: 1920px
+  margin: auto
+.button_blue
+  background-color: #507fe1
+  border: none
+  text-transform: uppercase
+  color: white
+  font-size: 15px
+  &:hover
+   cursor: pointer
+.main__title
+  font-size: 30px
+  text-align: center
+  text-transform: uppercase
+  +bold
+  padding-bottom: 100px
+.section
+  padding: 100px 0
+@media (max-width:1200px)
+  .main__title
+    padding-bottom: 0px
+@media (max-width:576px)
+  .section
+    padding: 20px 0px    

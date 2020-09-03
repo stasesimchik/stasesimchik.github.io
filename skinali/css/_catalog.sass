@@ -1,0 +1,76 @@
+.catalog
+  background: #f1f1f1
+  &__wrap
+    display: flex
+    flex-direction: column
+  &__blocks
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__block
+    flex-basis: 49%
+    margin-bottom: 20px
+    &:hover .catalog__buttons
+      transform: scaleY(1)
+  &__image
+    width: 100%
+  &__card
+    position: relative
+  &__tag,&__fitting,&__add
+    padding: 10px
+    text-transform: uppercase
+  &__tag
+    position: absolute
+    bottom: 70px
+    left: 3%
+    background-color: #92aeec
+    color: #fff
+    font-size: 12px
+    +bold
+  &__fitting
+    color: #a4c1f2
+    background-color: #fff
+    font-size: 11px
+    border: none
+  &__add
+    font-size: 11px
+    border: none
+    color: #fff
+    background-color: #92aeec
+  &__like
+    padding: 8px
+    background-color: #417cde
+    border: none
+  &__buttons
+    display: flex
+    position: absolute
+    bottom: 10px
+    right: 0
+    transform: scaleY(0)
+    transition: 0.5s
+  &__button
+    width: 350px
+    height: 70px
+    margin: auto
+    margin-bottom: 20px
+  &__text
+    font-size: 16px
+    text-align: center
+@media (max-width:991px)
+  .catalog
+    &__tag
+     bottom: 50px
+@media (max-width:768px)
+  .catalog
+    &__blocks
+      justify-content: center
+    &__block
+      flex-basis: 100%
+    &__tag
+      bottom: 90px
+@media (max-width:600px)
+  .catalog
+    &__tag
+     display: none
+    &__button
+      width: 80%

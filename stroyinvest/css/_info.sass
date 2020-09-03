@@ -1,0 +1,59 @@
+.info-description
+   padding: 0px 10px
+   &__title
+      font-size: 24px
+      margin-bottom: 34px
+   &__text
+      font-size: 14px
+   &__button
+      font-size: 16px
+      color: $white
+      padding: 20px 30px
+      border: none
+      border-radius: 10px
+      background-color: $active
+      box-shadow: 5px 5px 0px rgba($active,0.8)
+      margin-top: 30px
+      &:focus
+         outline: none
+      &:hover
+         cursor: pointer
+.blocks
+   display: flex
+   justify-content: space-between
+   &-item
+     display: flex
+     flex-direction: column
+     justify-content: space-between
+     background-color: $white
+     height: 220px
+     max-width: 25%
+     margin-right: 10px
+     overflow: hidden
+     img
+        width: 100%
+        max-height: 140px
+        margin: auto
+     &__title
+        display: block
+        font-size: 14px
+        color: $active
+        padding: 15px 30px
+        text-align: center
+.info-direction
+   margin-top: 85px
+   padding: 0px 20px
+.active
+   color: $active
+   text-transform: uppercase
+   font-weight: 700
+.slick-dots li button
+  background-color: gray !important
+  border-radius: 50%
+  width: 10px !important
+  height: 10px !important
+.slick-dots li.slick-active button:before
+ background-color: $active
+ width: 10px
+ height: 10px
+ border-radius: 50%

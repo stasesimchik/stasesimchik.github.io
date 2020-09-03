@@ -1,0 +1,44 @@
+.reviews
+  background-color: #f6f7f9
+  &-blocks
+    display: flex
+    justify-content: space-between
+    &__item
+      text-align: center
+      margin: 0 10px
+      margin-bottom: 50px
+    &__name
+      display: block
+    &__image
+      margin: 30px auto
+    &__text
+      position: relative
+      max-width: 370px
+      font-size: 14px
+      font-style: italic
+      padding: 10px
+      background-color: #fff
+      border-radius: 10px
+      &::after
+        content: ''
+        border: 10px solid transparent
+        border-top: 10px solid #fff
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translateX(-50%)
+@media (max-width:1005px)
+  .reviews-blocks__item
+    margin-bottom: 50px
+  .reviews-blocks__text
+    margin: auto
+  // .request__form
+    // margin-top: 20%
+@media (max-width:991px)
+  .reviews
+    &-blocks
+     flex-direction: column
+     align-items: center
+     margin-bottom: 20px
+     &__item
+       margin-bottom: 20px

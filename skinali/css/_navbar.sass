@@ -1,0 +1,79 @@
+.navbar
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: #fff
+  z-index: 99
+  &__wrap
+   display: flex
+   min-height: 80px
+   align-items: center
+   justify-content: space-between
+  &__contact
+    text-align: right
+  &__phone
+    display: block
+    font-size: 18px
+    color: #1c1c1c
+    text-transform: uppercase
+    text-decoration: none
+    +bold
+  &__work,&__email
+    display: block
+    color: #7b7b79
+    font-size: 14px
+    text-decoration: none
+  &__email
+    text-decoration: dotted underline
+  &__button
+    width: 205px
+    height: 40px
+    border: 2px solid #507fe1
+    background-color: transparent
+    color: #507fe1
+    text-transform: uppercase
+    &:hover
+     cursor: pointer
+.menu
+  &-button
+    background-color: transparent
+    border: none
+    border-right: 1px solid rgba(#510bba,0.1)
+    border-left: 1px solid rgba(#510bba,0.1)
+    height: 80px
+    width: 70px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    &__line
+      width: 20px
+      height: 2px
+      margin: 3px 0
+      background-color: #5482e2
+    &:focus
+      outline: none
+.logo
+  &__text
+    font-size: 18px
+    text-transform: uppercase
+    display: block
+    +bold
+  &__description
+    display: block
+    font-size: 14px
+    color: #6b6b6b
+
+@media (max-width:991px)
+  .navbar
+    &__wrap
+      justify-content: space-around
+    &__phone,&__work,&__email
+     display: none
+    &__button
+      width: 40%
+      margin-right: 0
+@media (max-width:576px)
+  .navbar__button
+    display: none

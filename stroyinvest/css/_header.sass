@@ -1,0 +1,39 @@
+.navbar
+  background-color: $white
+  padding: 15px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 25px
+  &-menu
+    display: none
+    &__btn
+      background-color: transparent
+      border: none
+      &:hover
+        cursor: pointer
+      &:focus
+        outline: none
+  &-list
+    list-style: none
+    display: flex
+    padding: 0
+    z-index: 99
+    &__item
+     margin-left: 45px
+     font-size: 14px
+     font-weight: 700
+     &:hover .navbar-list__link::after
+      transition: 0.2s
+      transform: translateY(37px) scaleX(1)
+    &__link
+     text-transform: uppercase
+     text-decoration: none
+     color: $text
+     &::after
+      content: ''
+      height: 2px
+      width: 100%
+      background-color: $active
+      display: block
+      transform: scaleX(0)

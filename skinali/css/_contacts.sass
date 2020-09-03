@@ -1,0 +1,29 @@
+.contacts
+  background-color: #fafbfc
+  &-row
+    display: flex
+    justify-content: space-between
+    text-align: center
+    margin-bottom: 50px
+    &__text
+      display: block
+      font-size: 16px
+    &__phone,&__location,&__mail
+      text-decoration: none
+      color: black
+  &__question
+    display: flex
+    align-items: center
+    justify-content: space-around
+    & h4
+      font-size: 30px
+    & span
+      font-size: 24px
+      color: #6d9ae5
+      text-decoration: underline
+@media (max-width:576px)
+  .contacts
+    &-row
+      flex-direction: column
+      a
+        margin-top: 10px 
